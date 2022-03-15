@@ -63,6 +63,7 @@ function deleteTodo(e) {
 }
 
 function filterTodo(e) {
+  e.preventDefault();
   const todos = todoList.childNodes;
   todos.forEach(function (todo) {
     switch (e.target.value) {
